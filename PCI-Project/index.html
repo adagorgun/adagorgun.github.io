@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="Temporal Concept Dynamics in Diffusion Models via Prompt-Conditioned Interventions"/>
+  <meta property="og:url" content="https://adagorgun.github.io/PCI-Project/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/PCI_teaser.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>More Understandable Feature Visualization through Distribution Alignment and Relevant Information Flow</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+    /* Prevent carousel from showing next/previous slides */
+    #results-carousel {
+      overflow: hidden;
+    }
+  
+    #results-carousel .item {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  
+    /* Hide navigation arrows */
+    .carousel-nav-left,
+    .carousel-nav-right {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Temporal Concept Dynamics in Diffusion Models via Prompt-Conditioned Interventions           </h1>
+              <h1 class="title is-3">
+                ICLR 2026          </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://adagorgun.github.io/" target="_blank">Ada Görgün*</a> <sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/fawazsammani" target="_blank">Fawaz Sammani*</a> <sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.etrovub.be/people/member/about-bio/ndeligia/" target="_blank">Nikos Deligiannis</a> <sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/bernt-schiele/" target="_blank">Bernt Schiele</a> <sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="http://explainablemachines.com/members/jonas-fischer.html" target="_blank">Jonas Fischer </a> <sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"> <sup>1</sup> Max Planck Institute for Informatics, Saarland Informatics Campus, Germany <br></span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"> <sup>2</sup> ETRO Department, Vrije Universiteit Brussel, Belgium <br></span>
+                  </div>
+                  <div class="is-size-6">
+                    <span class="author-block"> * Equal Contribution <br></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2512.08486" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/adagorgun/PCI-Prompt-Controlled-Interventions" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2512.08486" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser Figure-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay="" controls="" muted="" loop="" height="100%">
+              <!-- Your video here -->
+              <source src="static/videos/PCI_teaser_video.mp4" type="video/mp4">
+            </video>
+      <h2 class="subtitle has-text-centered">
+        <strong>Prompt-conditioned intervention (PCI) over diffusion timesteps. </strong> We suggest to study
+        when noise turns into a specific concept through the lens of concept insertion success, i.e., the chance
+        of inserting a concept at a certain timestep successfully. By switching the base-prompt (top) at
+        different time points of the diffusion process with a prompt composed of the base prompt and the
+        concept of interest (old), we can measure this success rate (CIS curve) across different seeds and base
+        prompts to analyze temporal dependency and influence of concepts in diffusion models.      </h2>
+    </div>
+  </div>
+</section>
+<!-- End Teaser Figure -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion models are usually evaluated by their final outputs, gradually denoising random noise into meaningful images. Yet, generation unfolds along a trajectory, and analyzing this dynamic process is crucial for understanding how controllable, reliable, and predictable these models are in terms of their success/failure modes. In this work, we ask the question: when does noise turn into a specific concept (e.g., age) and lock in the denoising trajectory? We propose PCI (Prompt-Conditioned Intervention) to study this question. PCI is a training-free and model-agnostic framework for analyzing concept dynamics through diffusion time. The central idea is the analysis of Concept Insertion Success (CIS), defined as the probability that a concept inserted at a given timestep is preserved and reflected in the final image, offering a way to characterize the temporal dynamics of concept formation. Applied to several state-of-the-art text-to-image diffusion models and a broad taxonomy of concepts, PCI reveals diverse temporal behaviors across diffusion models, in which certain phases of the trajectory are more favorable to specific concepts even within the same concept type. These findings also provide actionable insights for text-driven image editing, highlighting when interventions are most effective without requiring access to model internals or training, and yielding quantitatively stronger edits that achieve a balance of semantic accuracy and content preservation than strong baselines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method Class Neuron Video -->
+<!-- Method PCI Video -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content" style="text-align: justify;">
+          <h2 class="title is-3 has-text-centered">Prompt-Conditioned Intervention (PCI)</h2>
+          <p>
+            Prompt-Conditioned Intervention (PCI)</strong> tracks how and when
+  visual concepts solidify during the diffusion process. Starting from the same
+  noisy seed, we denoise with a base prompt until a chosen timestep, then switch
+  to a concept prompt that introduces the target concept. The model finishes
+  generation under this new prompt, and a VQA model checks whether
+  the concept appears in the final image. By repeating this across seeds and
+  timesteps, PCI measures the probability that a concept can still be inserted,
+  revealing the point in the trajectory when concepts become stable and
+  resistant to change.
+          </p>
+
+          <p>
+            <video poster="" id="pci-video" autoplay controls muted loop width="100%">
+              <source src="static/videos/method_video.mp4" type="video/mp4">
+            </video>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Category-Level Analysis</h2>
+
+    <div class="has-text-centered" style="margin-top: 1.5rem;">
+      <img src="static/images/selected_results.png"
+           alt="Intervention samples across timesteps"
+           style="max-width: 90%; height: auto;" />
+      <!-- Caption -->
+      <p class="has-text-centered" style="max-width: 700px; margin: 0 auto;">
+        <em>CIS reveals cross-category and cross-architecture differences.
+  <span style="color: red;">&#9679;</span> denotes CIS at 
+  &tau;<sub>50</sub> and 
+  <span style="color: blue;">&#9679;</span> denotes CIS at 
+  &tau;<sub>70</sub> across multiple concept categories and diffusion models.
+        </em>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      
+      <!-- Carousel Title -->
+      <h2 class="title is-3 has-text-centered">Fine-Grained Analysis</h2>
+
+      <!-- Carousel -->
+      <div id="results-carousel" class="carousel">
+        <div class="item has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/fine_grained_a.png" alt="MY ALT TEXT" class="is-inline-block" style="max-width: 90%; height: auto;" />
+          <h2 class="subtitle" style="font-size: 1.1rem;">age group under different contexts (playground, bus)</h2>
+        </div>
+        <div class="item has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/fine_grained_b.png" alt="MY ALT TEXT" class="is-inline-block" style="max-width: 90%; height: auto;" />
+          <h2 class="subtitle" style="font-size: 1.1rem;">clothing under different contexts (hospital, street)</h2>
+        </div>
+        <div class="item has-text-centered" style="margin-bottom: 2rem;">
+          <img src="static/images/fine_grained_c.png" alt="MY ALT TEXT" class="is-inline-block" style="max-width: 90%; height: auto;" />
+          <h2 class="subtitle" style="font-size: 1.1rem;">role-concept alignment</h2>
+        </div>
+      </div>
+      <!-- Caption -->
+      <p class="has-text-centered" style="max-width: 700px; margin: 0 auto;">
+        <em>
+          <strong>Revealing context-dependent differences for the same concept.</strong>
+          We show how CIS curves vary when the same concept is placed in different
+          contexts within the base prompt, demonstrating that contextual framing
+          can significantly shift concept editability over time.
+        </em>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End Image carousel -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Text-Driven Image Editing</h2>
+
+    <div class="has-text-centered" style="margin-top: 1.5rem;">
+      <img src="static/images/editing_sdxl.png"
+           alt="Intervention samples across timesteps"
+           style="max-width: 90%; height: auto;" />
+      <!-- Caption -->
+      <p class="has-text-centered" style="max-width: 700px; margin: 0 auto;">
+        <em>
+        <strong>Examples of text-driven image editing on SDXL.</strong>
+  The edited images are shown at four different points with their respective CIS probabilities: &tau;<sub>30</sub>, &tau;<sub>50</sub>, &tau;<sub>70</sub>, and &tau;<sub>90</sub>. High probabilities until a certain point ensure the intended modification but reduce preservation of the original image. We observe that CIS probabilities above 0.7 start to noticeably compromise the original content, and probabilities between 0.5 to 0.7 as suggested by our analysis (red rectangle) are best for editing while preserving
+the original image.
+</em>
+        
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{gorgun2025temporalconceptdynamicsdiffusion,
+      title={Temporal Concept Dynamics in Diffusion Models via Prompt-Conditioned Interventions}, 
+      author={Ada Gorgun and Fawaz Sammani and Nikos Deligiannis and Bernt Schiele and Jonas Fischer},
+      year={2025},
+      eprint={2512.08486},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.08486}, 
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
